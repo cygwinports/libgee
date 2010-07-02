@@ -3,8 +3,6 @@ inherit gnome2
 DESCRIPTION="GObject data structure library"
 HOMEPAGE="http://live.gnome.org/Libgee"
 
-PATCH_URI="0.5.0-no-undefined.patch"
-
 PKG_NAMES="${PN} libgee2 libgee-devel"
 libgee2_CONTENTS="usr/bin/cyggee-2.dll usr/share/doc/"
 libgee_devel_CONTENTS="usr/include/ usr/lib/ usr/share/gir-1.0/ usr/share/vala/"

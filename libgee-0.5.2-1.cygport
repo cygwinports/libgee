@@ -1,0 +1,14 @@
+inherit gnome2
+
+DESCRIPTION="GObject data structure library"
+HOMEPAGE="http://live.gnome.org/Libgee"
+
+vapidir=`pkg-config --variable=vapidir vala-0.10`
+
+PKG_NAMES="libgee2 libgee-devel vala-gee1.0"
+libgee2_CONTENTS="usr/bin/cyggee-2.dll usr/share/doc/"
+libgee_devel_CONTENTS="usr/include/ usr/lib/"
+vala_gee1_0_CONTENTS=${vapidir#/}
+
+CYGCONF_ARGS="--disable-doc"
+MAKEOPTS+=" vapidir=${vapidir}"

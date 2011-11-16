@@ -3,10 +3,16 @@ inherit gnome2
 DESCRIPTION="GObject data structure library"
 HOMEPAGE="http://live.gnome.org/Libgee"
 
+DEPEND="gnome-common
+	girepository(GLib-2.0)
+	pkgconfig(glib-2.0)
+	vala(glib-2.0)"
+
 PKG_NAMES="libgee2 libgee-devel girepository-Gee1.0 vala-gee1.0"
 libgee2_CONTENTS="usr/bin/cyggee-2.dll usr/share/doc/"
 libgee_devel_CONTENTS="usr/include/ usr/lib/lib* usr/lib/pkgconfig/"
 girepository_Gee1_0_CONTENTS="usr/*/gir*/Gee-1.0.*"
 vala_gee1_0_CONTENTS="usr/share/vala/"
 
+# requires valadoc, does not show up in devhelp
 CYGCONF_ARGS="--disable-doc"

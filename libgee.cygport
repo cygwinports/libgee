@@ -1,6 +1,9 @@
 inherit gnome2
 
-CATEGORY="Gnome"
+NAME="libgee"
+VERSION=0.6.7
+RELEASE=1
+CATEGORY="GNOME"
 SUMMARY="GObject data structure library"
 DESCRIPTION="Libgee is a collection library providing GObject-based interfaces
 and classes for commonly used data structures."
@@ -16,5 +19,3 @@ libgee2_CONTENTS="usr/bin/cyggee-2.dll usr/share/doc/"
 libgee_devel_CONTENTS="usr/include/ usr/lib/lib* usr/lib/pkgconfig/"
 girepository_Gee1_0_CONTENTS="usr/*/gir*/Gee-1.0.*"
 vala_gee1_0_CONTENTS="usr/share/vala/"
-
-KEEP_LA_FILES="none"

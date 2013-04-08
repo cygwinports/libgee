@@ -1,7 +1,7 @@
 inherit gnome2
 
 NAME="libgee"
-VERSION=0.6.7
+VERSION=0.6.8
 RELEASE=1
 CATEGORY="GNOME"
 SUMMARY="GObject data structure library"
